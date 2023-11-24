@@ -1,0 +1,32 @@
+body {
+    display: flex;
+    justify-content: center;
+    padding-left: 50%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+label {
+    display: block;
+    position: relative;
+}
+input {
+    appearance: none;
+}
+.radio {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: url("./angry.png");
+    background-size: cover;
+    top: 0;
+    left: 30px;
+}
+input:checked + .radio {
+    background: url("./happy.png");
+    background-size: cover;
+}
+
+.radio:hover {
+    background: url("./3260877.png");
+    background-size: cover;
+}
